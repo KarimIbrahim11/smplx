@@ -50,7 +50,10 @@ def main() -> None:
         lambda x: tqdm.write(x, end=''), level=exp_cfg.logger_level.upper(),
         colorize=True)
 
-    output_folder = osp.expanduser(osp.expandvars(exp_cfg.output_folder))
+    # output_folder = osp.expanduser(osp.expandvars(exp_cfg.get('output_folder', '/home/stud220/git/ImageTo3DSegmentedClothes/output/SMPLX_meshes')))
+
+    output_folder = '/home/stud220/git/ImageTo3DSegmentedClothes/output/SMPL_meshes'    
+    print("OUTPUT FOLDER: ", output_folder)
     logger.info(f'Saving output to: {output_folder}')
     os.makedirs(output_folder, exist_ok=True)
 

@@ -1,6 +1,6 @@
 datasets:
     mesh_folder:
-        data_folder: 'transfer_data/meshes/smplh'
+        data_folder: '/home/stud220/git/ImageTo3DSegmentedClothes/output/SMPLH_meshes/moved-meshes'
 deformation_transfer_path: 'transfer_data/smplh2smpl_def_transfer.pkl'
 mask_ids_fname: ''
 summary_steps: 100
@@ -16,7 +16,7 @@ optim:
 body_model:
     model_type: "smpl"
     gender: "neutral"
-    folder: "transfer_data/body_models"
+    folder: "/home/stud220/git/ImageTo3DSegmentedClothes/smplx/models"
     use_compressed: False
     use_face_contour: True
     smpl:
